@@ -1,6 +1,7 @@
 
 import './App.css';
 import {fbProvider} from './configs/authMethod';
+import {googlePr} from './configs/authMethod';
 import socialAuth from './service/auth';
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
         <h4>Hostel Allocation</h4>
         <p>Please sign-in:</p>
       <button onClick={()=> handle(fbProvider)}>facebook</button>
-      <button onClick={()=> handle(fbProvider)}>Google</button>
+      <button onClick={()=> handle(googlePr)}>Google</button>
 
       </header>
   
